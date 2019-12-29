@@ -14,7 +14,7 @@
           class="mb-2 md:mb-4"
         />
         <p>منصة تزامن ©2019</p>
-        <ul class="hidden md:flex mt-2">
+        <ul class="hidden xl:flex mt-2">
           <li class="mx-3"><a href="#">من نحن</a></li>
           <li class="mx-3"><a href="#">الأسئلة الشائعة</a></li>
           <li class="mx-3"><a href="#">اتصل بنا</a></li>

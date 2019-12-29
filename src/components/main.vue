@@ -1,6 +1,6 @@
 <template>
   <div class="main-div">
-    <div class="container mx-auto py-16">
+    <div class="container px-0 md:px-8 mx-auto py-16">
       <div class="flex flex-col md:flex-row px-8 md:px-0">
         <div class="video border w-full md:w-1/2 flex items-center justify-center">
           <img src="../assets/play.png" alt="play button" class="h-8" />

@@ -1,10 +1,16 @@
 <template>
   <div class="w-full container mx-auto mt-10">
     <div class="flex flex-wrap">
-      <div v-for="webinar in data" :key="webinar.title_en" class="md:w-1/3">
+      <a
+        :href="webinar.link"
+        v-for="webinar in data"
+        :key="webinar.title_en"
+        class="block md:w-1/2 lg:w-1/3"
+        target="_blank"
+      >
         <div class="bg-gray-200 pt-8 mx-12 mb-8">
           <div class="px-8">
-            <div class="h-64">
+            <div class="h-64 overflow-hidden">
               <div class="pb-8">
                 <h3 class="font-ar font-bold text-gray-800">
                   {{ webinar.title_ar }}
@@ -14,7 +20,7 @@
                 </h3>
               </div>
               <p class="font-ar text-sm text-gray-700">
-                {{ webinar.body.substr(0, 300) }}
+                {{ webinar.body.substr(0, 250) }}
               </p>
             </div>
           </div>
@@ -24,7 +30,7 @@
             class="mt-8"
           />
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </template>

@@ -8,7 +8,7 @@
     <h4 class="text-gray-500 text-lg font-ar">
       اشترك في قائمة <span class="text-gray-800">تزامن</span> البريدية
     </h4>
-    <p class="font-ar text-xs md:text-sm text-gray-800 mb-6">
+    <p class="font-ar text-center text-xs md:text-sm text-gray-800 mb-6">
       فور التحاقك بالقائمة البريدية فسوف يصلك بريد اليكتروني بكل ماهو جديد في
       تزامن
     </p>
@@ -19,7 +19,7 @@
         name="email"
         id="email"
         placeholder="بريدك الإلكتروني"
-        class="border rounded-full py-2 px-6 rounded-l-none font-ar w-64 text-sm"
+        class="border rounded-full py-2 px-6 rounded-l-none font-ar w-64 text-sm appearance-none"
       />
       <button
         class="rounded-full bg-main text-white rounded-r-none px-6 font-ar"
