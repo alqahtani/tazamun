@@ -2,8 +2,9 @@
   <div class="main-div">
     <div class="container px-0 md:px-8 mx-auto py-16">
       <div class="flex flex-col md:flex-row px-8 md:px-0">
-        <div class="video border w-full md:w-1/2 flex items-center justify-center">
-          <img src="../assets/play.png" alt="play button" class="h-8" />
+        <div @click="showVid" class="video border rounded w-full md:w-1/2 flex items-center justify-center">
+          <youtube video-id="FWbrDzDtcmw" class="w-full h-full" v-if="vid" />
+          <img src="../assets/play.png" alt="play button" class="h-8 cursor-pointer" v-if="!vid" />
         </div>
         <div class="w-full md:w-1/2 pr-0 md:pr-10 mt-6 md:mt-0 text-white">
           <div class="font-ar flex flex-col h-full justify-center">
@@ -29,7 +30,18 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      vid: false
+    }
+  },
+  methods: {
+    showVid() {
+      this.vid = true
+    }
+  }
+}
 </script>
 
 <style>
@@ -44,5 +56,9 @@ export default {}
 }
 .video {
   height: 320px;
+  background-image: url('../assets/cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 </style>

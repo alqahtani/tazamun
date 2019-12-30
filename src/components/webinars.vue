@@ -10,8 +10,8 @@
       >
         <div class="bg-gray-200 pt-8 mx-12 mb-8">
           <div class="px-8">
-            <div class="h-64 overflow-hidden">
-              <div class="pb-8">
+            <div class="md:h-64 overflow-hidden">
+              <div class="pb-6">
                 <h3 class="font-ar font-bold text-gray-800">
                   {{ webinar.title_ar }}
                 </h3>
@@ -19,15 +19,21 @@
                   {{ webinar.title_en }}
                 </h3>
               </div>
-              <p class="font-ar text-sm text-gray-700">
+              <p class="font-ar text-secondary text-sm mb-3">
+                "{{ webinar.quote }}"
+              </p>
+              <p class="hidden md:block font-ar text-sm text-gray-700">
                 {{ webinar.body.substr(0, 250) }}
+              </p>
+              <p class="md:hidden font-ar text-sm text-gray-700">
+                {{ webinar.body }}
               </p>
             </div>
           </div>
           <img
             :src="getImgUrl(webinar.img)"
             v-bind:alt="webinar.img"
-            class="mt-8"
+            class="mt-8 w-full"
           />
         </div>
       </a>

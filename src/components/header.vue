@@ -1,6 +1,8 @@
 <template>
   <div class="h-12 flex justify-between my-6 px-8 md:px-4 container mx-auto">
-    <img src="../assets/logo.png" alt="Tazamun Logo" class="h-full" />
+    <a href="/">
+      <img src="../assets/logo.png" alt="Tazamun Logo" class="h-full" />
+    </a>
     <button @click="sidebarOpen = false" class="text-gray-700">
       <!-- <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24">
         <path
@@ -11,7 +13,7 @@
           stroke="currentColor"
         />
       </svg> -->
-      <img src="https://img.icons8.com/android/24/999999/menu.png" />
+      <!-- <img src="https://img.icons8.com/android/24/999999/menu.png" /> -->
     </button>
   </div>
 </template>

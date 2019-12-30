@@ -3,7 +3,8 @@
     <h1 class="font-ar text-2xl md:text-4xl text-gray-700">أرشيف الندوات</h1>
     <img src="../assets/down.png" alt="Down Chevron" class="h-6 mt-2" />
     <Webinars />
-    <a href="#" class="mt-10 mb-16 flex flex-col items-center">
+    <div class="h-10"></div>
+    <a href="#" class="hidden mt-10 mb-16 flex flex-col items-center">
       <h1 class="font-ar text-xl text-gray-700">المزيد</h1>
       <img
         src="../assets/down.png"
