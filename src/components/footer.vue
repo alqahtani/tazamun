@@ -70,7 +70,7 @@ export default {}
 
 <style>
 .footer {
-  bbackground: rgb(83, 158, 142);
+  background: rgb(83, 158, 142);
   background: radial-gradient(
     circle,
     rgba(83, 158, 142, 1) 36%,
