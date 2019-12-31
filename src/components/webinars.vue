@@ -29,6 +29,9 @@
                 {{ webinar.body }}
               </p>
             </div>
+            <div class="mt-2">
+              <p class="font-ar text-main underline">اقرأ المزيد</p>
+            </div>
           </div>
           <img
             :src="getImgUrl(webinar.img)"

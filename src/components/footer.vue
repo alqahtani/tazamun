@@ -22,7 +22,7 @@
             ><img src="../assets/youtube.png" class="h-6 mx-2" alt="youtube"
           /></a>
         </div>
-        <p>منصة تزامن ©2019</p>
+        <p>تزامن ©2020</p>
         <ul class="hidden xl:flex mt-2">
           <li class="mx-3">
             <a href="https://elearning.kku.edu.sa/ar/node/41" target="_blank"
