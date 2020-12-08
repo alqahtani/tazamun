@@ -12,20 +12,32 @@
           <div class="px-8">
             <div class="md:h-64 overflow-hidden">
               <div class="pb-6">
-                <h3 class="font-ar font-bold text-gray-800">{{ webinar.title_ar }}</h3>
-                <h3 class="font-en font-bold text-gray-800">{{ webinar.title_en }}</h3>
+                <h3 class="font-ar font-bold text-gray-800">
+                  {{ webinar.title_ar }}
+                </h3>
+                <h3 class="font-en font-bold text-gray-800">
+                  {{ webinar.title_en }}
+                </h3>
               </div>
-              <p class="font-ar text-secondary text-sm mb-3">"{{ webinar.quote }}"</p>
-              <p
-                class="hidden md:block font-ar text-sm text-gray-700"
-              >{{ webinar.body.substr(0, 250) }}</p>
-              <p class="md:hidden font-ar text-sm text-gray-700">{{ webinar.body }}</p>
+              <p class="font-ar text-secondary text-sm mb-3">
+                "{{ webinar.quote }}"
+              </p>
+              <p class="hidden md:block font-ar text-sm text-gray-700">
+                {{ webinar.body.substr(0, 250) }}
+              </p>
+              <p class="md:hidden font-ar text-sm text-gray-700">
+                {{ webinar.body }}
+              </p>
             </div>
             <div class="mt-2">
               <p class="font-ar text-main underline">اقرأ المزيد</p>
             </div>
           </div>
-          <img :src="getImgUrl(webinar.img)" v-bind:alt="webinar.img" class="mt-8 w-full" />
+          <img
+            :src="getImgUrl(webinar.img)"
+            v-bind:alt="webinar.img"
+            class="mt-8 w-full"
+          />
         </div>
       </a>
     </div>
@@ -42,30 +54,30 @@
 </template>
 
 <script>
-import tdata from "../assets/data.json";
+import tdata from "../assets/data.json"
 
 export default {
   data() {
     return {
-      numOfPosts: 6,
-      hideMore: false
-    };
+      numOfPosts: 9,
+      hideMore: false,
+    }
   },
   methods: {
     getImgUrl(pic) {
-      return require("../assets/imgs/" + pic);
+      return require("../assets/imgs/" + pic)
     },
     displayMore() {
-      this.numOfPosts = tdata.data.length;
-      this.hideMore = true;
-    }
+      this.numOfPosts = tdata.data.length
+      this.hideMore = true
+    },
   },
   computed: {
     data() {
-      return tdata.data.slice(0, this.numOfPosts);
-    }
-  }
-};
+      return tdata.data.slice(0, this.numOfPosts)
+    },
+  },
+}
 </script>
 
 <style></style>
